@@ -1,6 +1,13 @@
+import CustomAppBar from "../components/CustomAppbar";
+
 function Produce() {
     
-    return <h1>커버곡 제작 페이지</h1>;
+    return (
+        <div>
+            <CustomAppBar />
+            <h1>곡 제작 페이지</h1>
+        </div>
+    );
 }
 
 export default Produce;
