@@ -131,7 +131,7 @@ export default function SignIn() {
     fontSize: '18px', // 텍스트 크기 설정
     padding: '30px' // 내부 여백 설정
   }}
-  color="secondary"
+  color="inherit"
 >
    
 </Button>
