@@ -64,7 +64,7 @@ export default function Home() {
                       // 16:9
                       pt: "56.25%",
                     }}
-                    image="https://source.unsplash.com/random?wallpapers"
+                    image="https://source.unsplash.com/random?singer"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -84,7 +84,7 @@ export default function Home() {
       {/* Footer */}
       <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          
         </Typography>
         <Typography
           variant="subtitle1"

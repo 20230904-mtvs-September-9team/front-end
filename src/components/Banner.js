@@ -6,9 +6,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import sample1 from '../images/sample1.jpg';
-import sample2 from '../images/sample2.jpg';
-import sample3 from '../images/sample3.jpg';
+import mainBanner from '../images/main_banner.png';
+import todaysMusic from '../images/todays_music.png';
+import todaysSinger from '../images/todays_singer.png';
 
 import './banner.css';
 // import required modules
@@ -33,13 +33,13 @@ export default function Banner() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={sample1} alt="이미지 설명1" />
+          <img src={mainBanner} alt="메인 배너" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={sample2} alt="이미지 설명2" />
+          <img src={todaysMusic} alt="오늘의 추천 음악" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={sample3} alt="이미지 설명3" />
+          <img src={todaysSinger} alt="오늘의 추천 가수" />
         </SwiperSlide>
       </Swiper>
     </>

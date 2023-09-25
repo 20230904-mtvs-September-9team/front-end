@@ -107,9 +107,9 @@ function Produce() {
                 onChange={handleSingerChange}
                 style={{ width: "100%", marginBottom: "20px" }}
               >
-                <MenuItem value="singer1">singer1</MenuItem>
-                <MenuItem value="singer2">singer2</MenuItem>
-                <MenuItem value="singer3">singer3</MenuItem>
+                <MenuItem value="성시경">성시경</MenuItem>
+                <MenuItem value="존박">존박</MenuItem>
+                <MenuItem value="김동률">김동률</MenuItem>
               </Select>
             </div>
             <div>
@@ -119,9 +119,9 @@ function Produce() {
                 onChange={handleSongChange}
                 style={{ width: "100%", marginBottom: "20px" }}
               >
-                <MenuItem value="song1">song1</MenuItem>
-                <MenuItem value="song2">song2</MenuItem>
-                <MenuItem value="song3">song3</MenuItem>
+                <MenuItem value="밝게 빛나는 별이되어 비춰줄게">밝게 빛나는 별이되어 비춰줄게</MenuItem>
+                <MenuItem value="헤어지자 말해요">헤어지자 말해요</MenuItem>
+                <MenuItem value="야생화">야생화</MenuItem>
               </Select>
             </div>
             <Button
