@@ -122,7 +122,7 @@ export default function Home() {
                     image={card.imageUrl}
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom variant="h5 overline" component="h2">
                       {card.title}
                     </Typography>
                     <Typography>{card.content}</Typography>

@@ -7,7 +7,11 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 function App() {
   // TODO remove, this demo shouldn't need to reset the theme.
-  const defaultTheme = createTheme();
+  const defaultTheme = createTheme({
+  typography: {
+    fontFamily: 'MyFont, sans-serif',
+  },
+});
   return (
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
