@@ -45,7 +45,7 @@ function Produce() {
     };
 
     // 서버 URL을 지정
-    const serverUrl = "https://example.com/api"; // 실제 서버 URL로 대체
+    const serverUrl = "http://localhost:8080/cover/making"; // 실제 서버 URL로 대체
 
     try {
       const response = await fetch(serverUrl, {
@@ -79,6 +79,9 @@ function Produce() {
     marginTop: 30,
     transform: `rotate(${rotation}deg)`,
     transition: "transform 5s ease-in-out",
+    sx: {
+      marginTop: 2,
+    },
   };
 
   return (
@@ -96,10 +99,10 @@ function Produce() {
         </Typography>
         <Grid container spacing={2}>
           {/* 화면 폭에 따라 Grid의 xs 설정을 변경 */}
-          <Grid xs={12} md={8}>
+          <Grid item xs={12} md={8}>
             <img src={record} alt="음반이미지" style={imageStyle} />
           </Grid>
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <div>
               <p><strong>Singer Selection:</strong></p>
               <Select
@@ -110,6 +113,8 @@ function Produce() {
                 <MenuItem value="성시경">성시경</MenuItem>
                 <MenuItem value="존박">존박</MenuItem>
                 <MenuItem value="김동률">김동률</MenuItem>
+                <MenuItem value="아이유">아이유</MenuItem>
+                <MenuItem value="윈터">윈터</MenuItem>
               </Select>
             </div>
             <div>
@@ -119,9 +124,11 @@ function Produce() {
                 onChange={handleSongChange}
                 style={{ width: "100%", marginBottom: "20px" }}
               >
-                <MenuItem value="밝게 빛나는 별이되어 비춰줄게">밝게 빛나는 별이되어 비춰줄게</MenuItem>
-                <MenuItem value="헤어지자 말해요">헤어지자 말해요</MenuItem>
+                <MenuItem value="밝게_빛나는_별이되어_비춰줄게">밝게 빛나는 별이되어 비춰줄게</MenuItem>
+                <MenuItem value="헤어지자_말해요">헤어지자 말해요</MenuItem>
                 <MenuItem value="야생화">야생화</MenuItem>
+                <MenuItem value="홍연">홍연</MenuItem>
+                <MenuItem value="사랑앓이">사랑앓이</MenuItem>
               </Select>
             </div>
             <Button
